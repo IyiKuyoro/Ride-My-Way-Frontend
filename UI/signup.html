@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ride My Way | Sign Up</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./styles/style.css">
+    </head>
+    <body>
+        <header>
+            <div id="nonhomeheader" class="container">
+                <img id="logo2" src="./images/logo.png">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="AboutUs.html">About Us</a></li>
+                        <li><a href="ContactUs.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <section>
+            <div id="signup-form">
+                <h2>User Sign-Up</h2>
+                <form class="sign-up">
+                    <div>
+                        <label>First Name</label>
+                        <br>
+                        <input id="first-name" type="text" placeholder="James" required>
+                    </div>
+                    <div>
+                        <label>Last Name</label>
+                        <br>
+                        <input id="last-name" type="text" placeholder="Bond" required>
+                    </div>
+                    <div>
+                        <label>Sex</label><br>
+                        <select id="sex" required>
+                            <option>Male</option>
+                            <option>Female</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Date of Birth</label>
+                        <br>
+                        <input id="DOB" type="date" required>
+                    </div>
+                    <div>
+                        <label>Phone Number</label>
+                        <br>
+                        <input id="phone-number" type="number" required>
+                    </div>
+                    <div>
+                        <label>Email Address</label>
+                        <br>
+                        <input id="email" type="email" placeholder="example@ridemyway.com" required>
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <br>
+                        <input id="password" type="password" placeholder="XXXXXXX" required>
+                    </div>
+                    <div>
+                        <label>Confirm Password</label>
+                        <br>
+                        <input id="password-confirm" type="password" placeholder="XXXXXXXX" required>
+                    </div>
+                    <div>
+                        <p id="signupErrMsg"></p>
+                    </div>
+                    <button id="sign-up-btn" class="button" type="submit">Submit</button>
+                </form>
+                <p>Already a user?  <a href="index.html">sign-in</a></p>
+            </div>
+        </section>
+
+        <footer class="norm-foot">
+            <div>
+                <p>Ride My Way &copy; 2018</p>
+                
+                <div class="images">
+                    <a href="#"><img src="./images/icon_facebook.png"></a>
+                    <a href="#"><img src="./images/icon_twitter.png"></a>
+                </div>
+            </div>
+        </footer>
+        <script src="./scripts/signup.js" type=""></script>
+    </body>
+</html>
