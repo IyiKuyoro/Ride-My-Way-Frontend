@@ -66,11 +66,6 @@ header a{
     color: black;
 }
 
-li:hover{
-  width: 110px;
-  /* text-decoration: underline blue; */
-}
-
 header li{
     display: inline;
     padding: 0 15px 0 15px;
