@@ -535,42 +535,43 @@ tr:hover {
     margin-top: 50px;
 }
 
-#welcome .container:hover {
-    background-color: rgb(191, 234, 255);
+.welcome-container{
+  text-align: center;
+  width: 71%;
+  float: left;
+  margin: 80px 0 0 12.5%;
+  padding: 0 30px 0 30px;
+  background-color: rgb(191, 234, 255, 0.7);
 }
 
-#welcome .container{
-    width: 71%;
-    float: left;
-    margin: 80px 0 0 12.5%;
-    padding: 0 30px 0 30px;
-    background-color: rgb(191, 234, 255, 0.5);
-}
-
-#welcome .container h1{
-    width: 50%;
-    margin: 10px 0 0 0;
-}
-
-#wel-msg{
-    width: 60%;
-    float: left;
+.welcom-container h1{
+  width: 50%;
+  margin: 10px 0 0 0;
 }
 
 /* Sign In */
-#sign-in-container {
-    float: right;
-    width: fit-content;
-    text-align: center;
+#signin-message {
+  color: red;
+}
+
+#sign-in-btn {
+  width: 40%;
+}
+
+.wrap {
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.signin-fields {
+  min-width: 50%;
+  float: left; 
 }
 
 aside{
-    min-height: 250px;
     padding: 10px;
-    background: #bfeaff;
     color: #006da0;
     font-size: 12px;
-    margin: 25px 0 0 0;
 }
 
 aside label{
@@ -846,11 +847,8 @@ footer ul{
   }
 
   aside{
-      float: none;
       display: flow-root;
-      width: 72.5%;
       min-height: 280px;
-      margin: 0 10% 0 12.5%;
       font-size: 17px;
   }
   
@@ -965,16 +963,25 @@ footer ul{
 
   .norm-foot {
     text-align: center;
+    padding: 0;
   }
 
   footer p {
     float: none;
     margin-left: 0;
   }
+
+  .welcome-container {
+    margin: 80px 0 0 6%;
+  }
+
+  .signin-fields {
+    float: none;
+  }
 }
 
 @media(min-height: 722px) {
-  .norm-foot {
+  .signup-foot {
     position: absolute;
     bottom: 0;
   }
