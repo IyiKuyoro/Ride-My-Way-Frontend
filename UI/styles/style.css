@@ -1,3 +1,7 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 body{
   padding: 0;
   margin: 0;
@@ -51,14 +55,10 @@ a{
 header .container{
     background: #3fccff;
     color: black;
-    padding: 0 80px 0 40px;
     border-bottom: 5px solid #006da0; 
     min-height: 70px;
-    position: fixed;
-    margin-top: 0px;
     width: 100%;
-    z-index: 3;
-    top: 0;
+    display: block;
 }
 
 header a{
@@ -66,8 +66,9 @@ header a{
     color: black;
 }
 
-a:hover{
-    text-decoration: underline blue;
+li:hover{
+  width: 110px;
+  /* text-decoration: underline blue; */
 }
 
 header li{
@@ -82,8 +83,6 @@ header img{
 
 header nav{
     float: right;
-    margin-top: 30px;
-    margin-right: 80px;
     padding: 0;
 }
 
@@ -134,39 +133,30 @@ header #logo{
 #logo2{
     height: 60px;
     float: left;
-    margin: 10px 0 10px 10px;
     padding: 0;
 }
 
 #dashboard-header {
     height: 60px;
-    /* float: left; */
-    margin: 0 0 10px 0;
-    padding: 0 20px 15px 20px;
 }
 
 #dashboard-header nav{
-    margin-top: 30px;
-    font-size: 17px;
+  font-size: 17px;
 }
 
 
 /* User Features */
 .userfeatures{
-    padding: 20px 0 0 15px;
-    width: 15%;
-    height: 100%;
-    background: #006da0;
-    display: block;    
-    position: fixed;
-    top: 80px;
-    bottom: 0;
+  padding-top: 10px;
+  text-align: center;
+  width: 15%;
+  float: left;
 }
 
 .userfeatures .features-icon{
-    width: 30px;
-    padding-bottom: 15px;
-    margin-right: 10px;
+    width: 20px;
+    margin-left: 10px;
+    display: block;
 }
 
 .userfeatures ul{
@@ -176,7 +166,7 @@ header #logo{
 }
 
 .userfeatures a{
-    color: #006da0;
+    color: black;
 }
 
 #sign-out{
@@ -186,19 +176,15 @@ header #logo{
 
 .userfeatures li{    
     list-style-type: none;
-    background: white;
-    opacity: 0.7;
-    /* border-radius: 10px; */
-    margin: 10px;
+    background: #3fccff;
+    border-radius: 50%;
+    margin: 15px 10px 15px 10px;
     padding: 3px;
 }
 
 #profile-pics{
     max-width: 60px;
-    margin: 0;
-    position: relative;
-    left: 24%;
-    margin-right: -50%;
+    border-radius: 50%;
 }
 
 #ridedetails{
@@ -276,34 +262,55 @@ header #logo{
     margin-right: -50%;
 }
 
-#find-rd{
-    overflow-y: auto;
-    overflow-x: hidden;
-    height: auto;
-    font-size: 15px;
-    color: black;
+#search-rides {
+  display: inline-block;
+  font-size: 15px;
+  width: 85%;
+  text-align: center;
+  border-bottom: solid 1px #006da0;
+  padding: 0.5% 0 0.5% 0;
 }
 
-#find-rd #search{
-    max-width: 300px;
-    margin-left: 47%;
-    margin-bottom: 0;
+.small-inputs {
+  width: 30%;
+  border-radius: 15px;
+  height: 30px;
 }
 
-#find-rd h1{
-    text-align: center;
+#rides {
+  flex-wrap: wrap;
+  width: 85%;
+  display: inline-block;
 }
 
-#find-rd h3{
-    display: inline;
-    text-align: center;
-    color: white;
+.ride-card {
+  min-width: 180px;
+  width: 20%;
+  background-color: #cccccc;
+  border-radius: 20px;
+  float: left;
+  margin: 1%;
+  padding: 1%;
+  text-align: center;
 }
 
-#find-rd p{
-    color: black;
-    text-align: center;
-    margin-top: -30px;
+.ride-card h5 {
+  display: inline;
+}
+
+.ride-card img {
+  width: 15px;
+  margin: 0 5px 0 5px;
+  display: inline;
+}
+
+.direction {
+  border-bottom: 1px solid black;
+}
+
+.time, .seats {
+  float: left;
+  padding: 0 13% 0 13%;
 }
 
 #find-rd form{
@@ -703,20 +710,15 @@ section #services{
 }
 
 .dash-foot {
-    width:100%;
-    height:30px;
-    padding: 5px 0 20px 0;
-    margin-top: 20px;
-    color: black;
-    background: #cccccc;
-    font-size: 15px;
-    bottom:0;
-    position: relative;
-    z-index: 3;
+  width:100%;
+  color: black;
+  background: #cccccc;
+  font-size: 15px;
+  display: inline-block;
+  text-align: center;
 }
 
 .spe-ft{
-    position: fixed;
     bottom: 0;
 }
 
@@ -861,16 +863,6 @@ footer ul{
       margin-right: 5%;
       font-size: 18px;
   }
-
-  .userfeatures{
-      width: 50px; 
-  }
-  
-  .userfeatures .features-icon{
-      width: 25px;
-      padding-bottom: 0;
-      margin: 0;
-  }
   
   .userfeatures ul{
       margin: 0;
@@ -913,7 +905,11 @@ footer ul{
   }
 }
 
-@media(max-width: 412px) {
+@media(max-width: 450px) {
+  .ride-card {
+    margin: 5% 20% 5% 20%;
+  }
+
   #logo2 {
     height: 45px;
     margin-left: 0;
@@ -977,5 +973,13 @@ footer ul{
   .norm-foot {
     position: absolute;
     bottom: 0;
+  }
+}
+
+@media(min-height: 549px) {
+  .dash-foot{
+    position: fixed;
+    bottom: 0;
+    left: 0;
   }
 }
