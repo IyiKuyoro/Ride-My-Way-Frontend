@@ -635,7 +635,7 @@ aside p, #signup-form p{
     width: 20%;
 }
 
-#signup-form p{
+#signup-form-p{
     color: #a3a3a3;
     margin-left: -4%;
 }
@@ -648,8 +648,8 @@ aside p, #signup-form p{
     color: blue;
 }
 
-#signupErrMsg{
-    color: red;
+#signup-message-p {
+  color: red;
 }
 
 #servicesHeader{
