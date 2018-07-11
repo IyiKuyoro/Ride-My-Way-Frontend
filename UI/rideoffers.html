@@ -1,118 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Ride My Way | DashBoard</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/style.css">
-    </head>
-    <body class="diff-bg">
-        <header>
-            <div id="dashboard-header" class="container">
-                <img id="logo2" src="./images/logo.png">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="AboutUs.html">About Us</a></li>
-                        <li><a href="ContactUs.html">Contact Us</a></li>
-                        <li><img id="notification" src="./images/icon_notification.png"></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ride My Way | DashBoard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body class="diff-bg">
+    <header>
+      <div id="dashboard-header" class="container">
+        <img id="logo2" src="./images/logo.png">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container userfeatures wide">
+        <img id="profile-pics" src="./images/My Passport.JPG">
+        <ul>
+            <li><a href="dashboard.html">Profile</a></li>
+            <li><a href="friends.html">Friends</a></li>
+            <li><a class="current" href="rideoffers.html">Rides</a></li>
+            <li><a href="offerride.html">Offer</a></li>
+            <li><a href="reviewrequests.html">Requests</a></li>
+            <li><a id="sign-out" href="index.html">Sign Out</a></li>
+        </ul>
+    </div>
+    <div id="search-rides">
+        <label>from:</label>
+        <input type="search" class="small-inputs">
+        <label>to:</label>
+        <input type="search" class="small-inputs">
+    </div>
 
-        <div id="msgRegion" class="visibility">
-            
-        </div>
+    <div id="rides"> 
+      
+    </div>
 
-        <div class="container userfeatures">
-            <div>
-                <img class="features-icon centered" src="./images/icon_fulllist.png">
-                <img id="profile-pics" src="./images/profilepics.png">
-            </div>
-            <ul>
-                <li><a href="dashboard.html">Profile</li>
-                <li><a href="friends.html">Friends</li>
-                <li><a class="current" href="rideoffers.html">Ride Offers</a></li>
-                <li><a href="offerride.html">Offer a Ride</a></li>
-                <li><a href="reviewrequests.html">Review Request</a></li>
-                <li><a id="sign-out" href="index.html">Sign Out</a></li>
-            </ul>
+    <div class="screen visibility">
+      <div id="ridedetails" class="visibility">          
+        <img id="close" src="./images/icon_close.png">
+        <div>
+          <img id="profile-pics" src="./images/profilepics.png">
+          <h3>Driver's Name</h3>
+          <p id="rdOff">Rides Offered: XXXX</p>
         </div>
+        <ul>
+          <li><span class="bold">From: </span><span>location</span></li>
+          <li><span class="bold">To: </span><span>location</span></li>
+          <li><span class="bold">Time: </span><span>time</span></li>
+          <li><span class="bold">Space: </span><span>number</span></li>
+          <li><span class="bold">Will Stop? </span><span>Yes/No</span></li>
+          <li>
+            <p class="bold">Proposed Route: </p>
+            <p>description</p>
+          </li>
+        </ul>
+        <button id="request-ride">Request</button>
+      </div>
+    </div>        
 
-        <div class="dashboard container">
-            <div id="find-rd" class="ride-history-table">
-                <h1 class="heading">Ride Offers</h1>
-                <table id="offeres">
-                    <tr>
-                        <th>S/N</th>
-                        <th>Driver</th>
-                        <th>From</th>
-                        <th>To</th>
-                        <th>Time/Date</th>
-                        <th>Avaliable Space</th>
-                        <th>Avaliable Space</th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Samuel John</td>
-                        <td>Ikeja</td>
-                        <td>Magodo</td>
-                        <td>9:30AM 26/06/2002</td>
-                        <td>3</td>
-                        <td><button class="vrBtn">View</button></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>David Goldsmith</td>
-                        <td>VI</td>
-                        <td>Maryland</td>
-                        <td>10:00PM 26/06/2002</td>
-                        <td>2</td>
-                        <td><button class="vrBtn">View</button></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
+    <footer class="dash-foot spe-ft">
+      <div>
+        <p>Ride My Way &copy; 2018</p>
         
-        <div class="screen visibility">
-            <div id="ridedetails" class="visibility">          
-                <img id="close" src="./images/icon_close.png">
-                <div>
-                    <img id="profile-pics" src="./images/profilepics.png">
-                    <h3>Driver's Name</h3>
-                    <p id="rdOff">Rides Offered: XXXX</p>
-                </div>
-                <ul>
-                    <li><span class="bold">From: </span><span>location</span></li>
-                    <li><span class="bold">To: </span><span>location</span></li>
-                    <li><span class="bold">Time: </span><span>time</span></li>
-                    <li><span class="bold">Space: </span><span>number</span></li>
-                    <li><span class="bold">Will Stop? </span><span>Yes/No</span></li>
-                    <li>
-                        <p class="bold">Proposed Route: </p>
-                        <p>description</p>
-                    </li>
-                </ul>
-                <button id="request-ride">Request</button>
-            </div>
-        </div>        
-
-        <footer class="dash-foot spe-ft">
-            <div>
-                <p>Ride My Way &copy; 2018</p>
-                
-                <div class="images">
-                    <a href="#"><img src="./images/icon_facebook.png"></a>
-                    <a href="#"><img src="./images/icon_twitter.png"></a>
-                </div>
-
-                <ul>
-                    <li><a>Help</a></li>
-                </ul>
-            </div>
-        </footer>
-        <script src="./scripts/rideOffers.js" type=""></script>
-    </body>
+        <div class="images">
+          <a href="#"><img src="./images/icon_facebook.png"></a>
+          <a href="#"><img src="./images/icon_twitter.png"></a>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/rideOffers.js" type=""></script>
+  </body>
 </html>
