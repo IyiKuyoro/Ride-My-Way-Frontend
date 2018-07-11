@@ -550,6 +550,10 @@ tr:hover {
 }
 
 /* Sign In */
+#signin-message {
+  color: red;
+}
+
 #sign-in-btn {
   width: 40%;
 }
