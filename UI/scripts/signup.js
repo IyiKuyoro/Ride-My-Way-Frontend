@@ -81,8 +81,7 @@ signUp.addEventListener('submit', (event) => {
         .then(res => res.json())
         .then((data) => {
           signUpError.innerHTML = data.message || 'Success!';
-          sessionStorage.token = data.data.token;
-          window.location.replace('dashboard.html');
+          window.location.replace('index.html');
         })
         .catch(err => console.log(err));
     }

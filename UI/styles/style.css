@@ -308,59 +308,6 @@ header #logo{
   padding: 0 13% 0 13%;
 }
 
-#find-rd form{
-    color: black;
-    border-radius: 10px;
-    margin: 3px;
-    padding: 20px;
-    float: left;
-    background: #f5f5f5;
-    box-shadow: 1px 1px 2px 1px #bfbfbf;
-}
-
-.padding{
-    padding: 0 10% 0 10%;
-}
-
-#find-rd form div{
-    float: left;
-    width: 49%;
-    margin-left: 1%;
-}
-
-#find-rd form input {
-    width: 90%;
-    float: left;
-}
-
-#find-rd form select{
-    width: 94%;
-    float: left;
-}
-
-#find-rd form textarea{
-    min-height: 157px;
-    width: 90%;
-    padding: 10px;
-    font-size: 16px;
-    margin: 7px 0 0 0;
-}
-
-#find-rd form .button{
-    width: 95%;
-    padding: 8px;
-    margin: 20px 7px 20px 7px;
-    background: #037ef1;
-    color: black;
-    border: none;
-    font-size: 15px;
-}
-
-#find-rd{
-    position: relative;
-    margin-top: 130px;
-}
-
 .dashboard {
     height: fit-content;
     margin: 100px 0 5% 23%;
@@ -771,19 +718,6 @@ footer ul{
 
   .diff-bg{
       background-size: 310%;
-  }
-
-  #find-rd #search{
-      margin-left: 30%;
-  }
-
-  #find-rd{
-      overflow-x: scroll;
-  }
-
-  #find-rd form{
-      margin-left: 18%;
-      width: 70%;
   }
 }
 
