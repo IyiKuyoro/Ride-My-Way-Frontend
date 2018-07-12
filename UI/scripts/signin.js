@@ -39,7 +39,7 @@ signIn.addEventListener('submit', (event) => {
 
         signInError.innerHTML = data.message || 'Success!';
         sessionStorage.token = data.data.token;
-        window.location.replace('dashboard.html');
+        window.location.href = 'rideoffers.html';
       })
       .catch(err => console.log(err));
   }
