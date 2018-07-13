@@ -35,9 +35,28 @@ const getSpecificRide = (rideId) => {
         <button id="request-ride">Request</button>
       </div>`;
       }
+
       const close = document.getElementById('close');
       close.addEventListener('click', () => {
         screen.classList.toggle('visibility');
+      });
+
+      const requestRide = document.getElementById('request-ride');
+      requestRide.addEventListener('click', () => {
+        fetch(`https://iyikuyoro-ride-my-way.herokuapp.com/api/v1/rides/${rideId}/requests`, {
+          method: 'POST',
+          headers: {
+            jwt: sessionStorage.token,
+            'Content-Type': 'application/json; charset=utf-8'
+          },
+        })
+          .then(res => res.json())
+          .then((data) => {
+            // Display message and close the details
+            console.log(data.message);
+            console.log(rideId);
+          })
+          .catch(err => console.log(err));
       });
     })
     .catch(err => console.log(err));
@@ -75,7 +94,6 @@ fetch('https://iyikuyoro-ride-my-way.herokuapp.com/api/v1/rides', {
       }
       const view = document.getElementsByClassName('view');
       for (let i = 0; i < view.length; i += 1) {
-        console.log(view[i].parentElement.id);
         view[i].addEventListener('click', () => {
           getSpecificRide(view[i].parentElement.id);
         });
