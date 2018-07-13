@@ -19,8 +19,7 @@ const getSpecificRide = (rideId) => {
         screen.innerHTML = `<div id="ridedetails">          
         <img id="close" src="./images/icon_close.png">
         <div>
-          <h3>Driver's Name</h3>
-          <p id="rdOff">Rides Offered: XX</p>
+          <h3>${data.data.ride.driverName}</h3>
         </div>
         <ul>
           <li><span class="bold">From: </span><span>${data.data.ride.origin}</span></li>
