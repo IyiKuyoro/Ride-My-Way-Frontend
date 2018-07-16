@@ -39,6 +39,7 @@ signIn.addEventListener('submit', (event) => {
 
         signInError.innerHTML = data.message || 'Success!';
         sessionStorage.token = data.data.token;
+        sessionStorage.userId = data.data.iD;
         window.location.href = 'rideoffers.html';
       })
       .catch(err => console.log(err));

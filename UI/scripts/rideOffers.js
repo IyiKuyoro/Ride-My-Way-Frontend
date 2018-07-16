@@ -51,9 +51,9 @@ const getSpecificRide = (rideId) => {
           },
         })
           .then(res => res.json())
-          .then((data) => {
+          .then((inData) => {
             // Display message and close the details
-            console.log(data.message);
+            console.log(inData.message);
             console.log(rideId);
           })
           .catch(err => console.log(err));

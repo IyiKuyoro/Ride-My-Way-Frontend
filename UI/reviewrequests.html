@@ -1,94 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Ride My Way | Offer Ride </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/style.css">
-    </head>
-    <body class="container diff-bg">
-        <header>
-            <div id="dashboard-header" class="container">
-                <img id="logo2" src="./images/logo.png">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="AboutUs.html">About Us</a></li>
-                        <li><a href="ContactUs.html">Contact Us</a></li>
-                        <li><img id="notification" src="./images/icon_notification.png"></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <div id="msgRegion" class="visibility">
-            
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ride My Way | Offer Ride </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/loader-style.css">
+    <link rel="stylesheet" href="./styles/requests.css">
+  </head>
+  <body class="container diff-bg">
+    <header>
+      <div id="dashboard-header" class="container">
+        <img id="logo2" src="./images/logo.png">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="ContactUs.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="cover">
+      <div class="loader"></div>
+    </div>
+    <div class="userfeatures">
+      <ul>
+        <li><a href="rideoffers.html">Rides</a></li>
+        <li><a href="offerride.html">Offer</a></li>
+        <li><a class="current" href="reviewrequests.html">Requests</a></li>
+        <li><a id="sign-out" href="">Sign Out</a></li>
+      </ul>
+    </div>
+    <div id="rides"></div>
+    <div class="screen visibility">
+    </div>
+    <footer class="dash-foot spe-ft">
+      <div>
+        <p>Ride My Way &copy; 2018</p>
+        
+        <div class="images">
+          <a href="#"><img src="./images/icon_facebook.png"></a>
+          <a href="#"><img src="./images/icon_twitter.png"></a>
         </div>
-
-        <div class="userfeatures">
-            <div>
-                <img class="features-icon centered" src="./images/icon_fulllist.png">
-                <img id="profile-pics" src="./images/profilepics.png">
-            </div>
-            <ul>
-                <li><a href="rideoffers.html">Rides</a></li>
-                <li><a href="offerride.html">Offer</a></li>
-                <li><a class="current" href="reviewrequests.html">Requests</a></li>
-                <li><a id="sign-out" href="">Sign Out</a></li>
-            </ul>
-        </div>
-
-        <div class="dashboard">
-            <div class="ride-history-table">
-                <div id="find-rd" class="container">
-                    <h1>Offer a Ride</h1>
-                </div>
-                <table id="offeres">
-                    <tr>
-                        <th>S/N</th>
-                        <th>Rider</th>
-                        <th>Destination</th>
-                        <th>Time/Date</th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Samuel John</td>
-                        <td>Ikeja</td>
-                        <td>9:30AM 26/06/2002</td>
-                        <td><button class="accept">Accept</button></td>
-                        <td><button class="reject">Reject</button></td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>David Goldsmith</td>
-                        <td>Maryland</td>
-                        <td>10:00PM 26/06/2002</td>
-                        <td><button class="accept">Accept</button></td>
-                        <td><button class="reject">Reject</button></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <div id="message" class="visibility"></div>
-
-        <footer class="dash-foot spe-ft">
-            <div>
-                <p>Ride My Way &copy; 2018</p>
-                
-                <div class="images">
-                    <a href="#"><img src="./images/icon_facebook.png"></a>
-                    <a href="#"><img src="./images/icon_twitter.png"></a>
-                </div>
-
-                <ul>
-                    <li><a>Help</a></li>
-                </ul>
-            </div>
-        </footer>
-        <script src="./scripts/requests.js" type=""></script>
-    </body>
+      </div>
+    </footer>
+    <script src="./scripts/requests.js" type=""></script>
+  </body>
 </html>
