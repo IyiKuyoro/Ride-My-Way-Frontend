@@ -386,14 +386,14 @@ aside label{
     font-size: 16px;
 }
 
-button{
-    width: 95%;
-    padding: 8px;
-    margin: 20px 7px 20px 7px;
-    background: #006da0;
-    color: black;
-    border: none;
-    font-size: 16px;
+button, .button{
+  width: 95%;
+  padding: 8px;
+  margin: 20px 7px 20px 7px;
+  background: #006da0;
+  color: black;
+  border: none;
+  font-size: 16px;
 }
 
 aside p, #signup-form p{
