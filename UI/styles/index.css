@@ -30,11 +30,16 @@ header {
 .center-text {
   text-align: center;
 }
+
 .hero {
   margin-top: 2%;
   padding: 10px;
   width: 100%;
   background-color: rgb(191, 234, 255, 0.7)
+}
+
+.welcome-message {
+  padding: 2px;
 }
 
 .sign-in-container {
@@ -48,15 +53,17 @@ header {
 
 .sign-in-fields label {
   font-size: 17px;
-  width: 25%;
+  width: 100%;
   min-height: 25px;
   padding-top: calc((25px - 17px));
 }
 
 .sign-in-fields input {
   margin: 0;
-  width: 73%;
+  width: 100%;
   min-height: 25px;
+  border: none;
+  text-align: center;
 }
 
 button {
@@ -67,7 +74,13 @@ button {
 }
 
 #sign-in-btn {
+  margin: 7px;
   width: 96%;
+}
+
+.links {
+  color: rgb(92, 92, 92);
+  font-size: 15px;
 }
 
 .servicesHeader {
@@ -99,6 +112,10 @@ button {
   color: red;
 }
 
+.message-visibility {
+  display: none;
+}
+
 @media screen and (max-width: 380px) {
   .wrap-container {
     justify-content: center;
@@ -118,11 +135,12 @@ button {
 
 @media screen and (min-width: 700px) {
   .welcome-message {
-    width: 50%;
+    width: 60%;
+    text-align: left;
   }
 
   .sign-in-container {
-    width: 50%;
+    width: 39%;
   }
 
   .sign-in {
@@ -135,7 +153,7 @@ button {
   }
 
   #sign-in-btn {
-    width: 74%;
+    width: 95%;
   }
 }
 
