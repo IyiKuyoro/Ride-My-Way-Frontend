@@ -1,39 +1,63 @@
-.offer-body {
-  display: flex;
+.center-contents {
   justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.center-contents h2 {
   width: 100%;
 }
 
-.offer-container {
-  width: 65%;
+.center-contents p {
+  width: 100%;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
+}
+
+.offer-fields {
+  width: 100%;
+  margin: 5px 0;
+  border: none;
   text-align: center;
-  justify-content: center;
+  height: 25px;
+}
+
+.offer-button {
+  margin-top: 10px;
+}
+
+select {
+  height: 30px;
+  text-align: center;
 }
 
 form {
   width: 45%;
+  padding: 15px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 220px;
-  font-size: 15px;
+  min-width: 250px;
+  font-size: 18px;
+  background-color: #ccc;
+  flex-direction: column;
 }
 
-.offerride-footer {
-  color: black;
-  background-color: #cccccc;
-  font-size: 15px;
+#message-container {
   text-align: center;
-  padding: 1.1em;
-  display: flex;
-  justify-content: center;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
 }
 
 textarea {
-  width: 95%;
+  width: 98%;
   height: 100px;
+  border: none;
+  text-align: center;
 }
