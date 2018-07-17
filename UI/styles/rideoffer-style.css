@@ -1,9 +1,98 @@
+.dashboard-brand {
+  justify-content: flex-end;
+}
+
+.dashboard-links {
+  font-size: 25px;
+  align-self: center;
+  text-decoration: none;
+}
+
+.dashboard-links:hover {
+  color: #4e6eff;
+}
+
+.dashboard-nav {
+  margin-top: 10px;
+  padding: 0;
+}
+
+.nav-buttons {
+  border-Bottom: 1px solid #041666;
+  width: calc((100% - 8px)/4);
+  text-decoration: none;
+  padding: 2% 0;
+  text-align: center;
+}
+
+.current {
+  border-top: 1px solid #041666;
+  border-left: 1px solid #041666;
+  border-right: 1px solid #041666;
+  border-bottom: none;
+}
+
+.filter {
+  justify-content: center;
+}
+
+.filter-select {
+  padding: 5px;
+  margin: 5px;
+  width: 25%;
+  min-width: 180px;
+}
+
+#rides {
+  justify-content: center;
+}
+
+.ride-card {
+  width: 200px;
+  height: 150px;
+  margin: 10px 5px 0 5px;
+  border-radius: 5px;
+  box-shadow: 0 1px 10px 1px #4e6eff;
+  justify-content: center;
+  text-align: center;
+}
+
+.ride-card:hover {
+  box-shadow: 0 1px 1px 1px #4e6eff;
+}
+
+.ride-card img {
+  width: 25px;
+  height: 25px;;
+  margin: 0 5px
+}
+
+.direction{
+  width: 100%;
+  height: fit-content;
+  justify-content: center;
+}
+
+.direction h5 {
+  padding: 1% 0;
+}
+
+.details {
+  width: 100%;
+  justify-content: center;
+  height: fit-content;
+}
+
+.view {
+  height: 35px;
+  width: 80%;
+}
+
 #ridedetails{
   background: #3fccff;
   padding: 5px 20px 10px 20px;
-  left: 40%;
-  top: 15%;
   width: 25%;
+  min-width: 220px;
   height: fit-content;
   border-radius: 15px;
 }
@@ -11,7 +100,7 @@
 .screen{
   top: 0;
   left: 0;
-  position: absolute;
+  position: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +120,7 @@
 
 #ridedetails h3{
   text-align: center;
-  margin: 0;
+  margin: 0 0 5px 0;
   font-size: 20px;
 }
 
@@ -41,7 +130,8 @@
 }
 
 #ridedetails ul{
-  /* background: white; */
+  margin: 0 auto;
+  padding: 0;
   border-top: solid #006da0;
 }
 
@@ -62,4 +152,31 @@
 #ridedetails #rdOff{
   margin-top: 5px;
   text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#request-message {
+  width: fit-content;
+  background: #3fccff;
+  position: absolute;
+  top: 120px;
+}
+
+@media screen and (max-width: 380px) {
+  .dashboard-brand {
+    justify-content: center;
+  }
+
+  .nav-buttons {
+    width: 49%;
+    border: 1px solid #041666;
+  }
+
+  .filter-select {
+    width: calc((100% - 40px)/2);
+    min-width: 0;
+  }
 }

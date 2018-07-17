@@ -16,24 +16,25 @@ const getSpecificRide = (rideId) => {
         window.location.replace('index.html');
       } else {
         screen.classList.toggle('visibility');
-        screen.innerHTML = `<div id="ridedetails">          
-        <img id="close" src="./images/icon_close.png">
-        <div>
-          <h3>${data.data.ride.driverName}</h3>
-        </div>
-        <ul>
-          <li><span class="bold">From: </span><span>${data.data.ride.origin}</span></li>
-          <li><span class="bold">To: </span><span>${data.data.ride.destination}</span></li>
-          <li><span class="bold">Time: </span><span>${data.data.ride.time}</span></li>
-          <li><span class="bold">Space: </span><span>${data.data.ride.avaliableSpace}</span></li>
-          <li><span class="bold">Will Stop? </span><span>${data.data.ride.allowStops}</span></li>
-          <li>
-            <p class="bold">Proposed Route: </p>
-            <p>${data.data.ride.description}</p>
-          </li>
-        </ul>
-        <button id="request-ride">Request</button>
-      </div>`;
+        screen.innerHTML = `<div id="request-message"></div>
+        <div id="ridedetails">          
+          <img id="close" src="./images/icon_close.png">
+          <div>
+            <h3>${data.data.ride.driverName}</h3>
+          </div>
+          <ul>
+            <li><span>From: </span><span class="bold">${data.data.ride.origin}</span></li>
+            <li><span>To: </span><span class="bold">${data.data.ride.destination}</span></li>
+            <li><span>Time: </span><span class="bold">${data.data.ride.time}</span></li>
+            <li><span>Space: </span><span class="bold">${data.data.ride.avaliableSpace}</span></li>
+            <li><span>Will Stop? </span><span class="bold">${data.data.ride.allowStops}</span></li>
+            <li>
+              <p>Proposed Route: </p>
+              <p class="bold">${data.data.ride.description}</p>
+            </li>
+          </ul>
+          <button id="request-ride">Request</button>
+        </div>`;
       }
 
       const close = document.getElementById('close');
@@ -53,8 +54,8 @@ const getSpecificRide = (rideId) => {
           .then(res => res.json())
           .then((inData) => {
             // Display message and close the details
-            console.log(inData.message);
-            console.log(rideId);
+            const requestMessage = document.getElementById('request-message');
+            requestMessage.innerHTML = inData.message;
           })
           .catch(err => console.log(err));
       });
@@ -75,19 +76,21 @@ fetch('https://iyikuyoro-ride-my-way.herokuapp.com/api/v1/rides', {
     } else {
       cover.style.display = 'none';
       for (let i = 0; i < data.data.rides.length; i += 1) {
-        rides.innerHTML += `<div id="${data.data.rides[i].id}" class="ride-card">
-          <div class= "direction">
+        rides.innerHTML += `<div id="${data.data.rides[i].id}" class="ride-card wrap-container">
+          <div class= "direction wrap-container">
             <h5>${data.data.rides[i].origin}</h5>
             <img src="./images/icon_to.png">
             <h5>${data.data.rides[i].destination}</h5>
           </div>
-          <div class="time">
-            <img src="./images/icon_clock.png">
-            <h6>${data.data.rides[i].time}</h6>
-          </div>
-          <div class="seats">
-            <img src="./images/icon_seat.png">
-            <h6>${data.data.rides[i].avaliableSpace}</h6>
+          <div class="details wrap-container">
+            <div class="time">
+              <img src="./images/icon_clock.png">
+              <h6>${data.data.rides[i].time}</h6>
+            </div>
+            <div class="seats">
+              <img src="./images/icon_seat.png">
+              <h6>${data.data.rides[i].avaliableSpace}</h6>
+            </div>
           </div>
           <button class="view">View</button>
         </div>`;
