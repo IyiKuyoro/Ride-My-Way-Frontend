@@ -16,11 +16,15 @@
 }
 
 .offer-fields {
-  width: 100%;
+  width: 97%;
   margin: 5px 0;
   border: none;
   text-align: center;
   height: 25px;
+}
+
+form label {
+  width: 100%;
 }
 
 .offer-button {
