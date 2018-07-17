@@ -73,6 +73,11 @@
   justify-content: center;
 }
 
+.direction img {
+  width: 15px;
+  height: 15px;
+}
+
 .direction h5 {
   padding: 1% 0;
 }
