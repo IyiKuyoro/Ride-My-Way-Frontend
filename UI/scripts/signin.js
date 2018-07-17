@@ -37,7 +37,7 @@ signIn.addEventListener('submit', (event) => {
         document.getElementById('emailField').value = '';
         document.getElementById('passwordField').value = '';
 
-        signInError.innerHTML = data.message || 'Success!';
+        signInError.innerHTML = data.message || '';
         sessionStorage.token = data.data.token;
         sessionStorage.userId = data.data.iD;
         window.location.href = 'rideoffers.html';

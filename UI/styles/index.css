@@ -1,0 +1,148 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+header {
+  height: fit-content;
+  width: 100%;
+  border-bottom: 2px solid #041666;
+  /* box-shadow: 0 6px 6px -4px #041666; */
+}
+
+.wrap-container {
+  padding: 1%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+}
+
+.brand {
+  width: calc(100% - 70px);
+  text-align: right;
+  font-size: 22px;
+  padding: 12px 0;
+}
+
+.center-text {
+  text-align: center;
+}
+.hero {
+  margin-top: 2%;
+  padding: 10px;
+  width: 100%;
+  background-color: rgb(191, 234, 255, 0.7)
+}
+
+.sign-in-container {
+  justify-content: center;
+  width: 100%;
+}
+
+.sign-in {
+  padding: 10px;
+}
+
+.sign-in-fields label {
+  font-size: 17px;
+  width: 25%;
+  min-height: 25px;
+  padding-top: calc((25px - 17px));
+}
+
+.sign-in-fields input {
+  margin: 0;
+  width: 73%;
+  min-height: 25px;
+}
+
+button {
+  border: 0;
+  background: #4e6eff;
+  min-height: 30px;
+  width: 100%;
+}
+
+#sign-in-btn {
+  width: 96%;
+}
+
+.servicesHeader {
+  width: 100%;
+  padding: 10px;
+  border-bottom: 2px solid #041666;
+}
+
+.services {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0;
+  justify-content: center;
+}
+
+.service-card {
+  background: white;
+  padding: 10px;
+  width: calc((1000px - 120px)/4);
+  margin: 10px 5px 0 5px;
+  box-shadow: 0 1px 10px 1px #4e6eff;
+}
+
+.wide {
+  width: 100%;
+}
+
+#signin-message {
+  color: red;
+}
+
+@media screen and (max-width: 380px) {
+  .wrap-container {
+    justify-content: center;
+  }
+
+  .logo {
+    width: 15%;
+    height: 15%;
+  }
+
+  .brand {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .welcome-message {
+    width: 50%;
+  }
+
+  .sign-in-container {
+    width: 50%;
+  }
+
+  .sign-in {
+    padding: 5px;
+  }
+
+  .right-align {
+    text-align: right;
+    padding-right: 10px;
+  }
+
+  #sign-in-btn {
+    width: 74%;
+  }
+}
+
+@media screen and (min-width: 1057px) {
+  .full-width {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
