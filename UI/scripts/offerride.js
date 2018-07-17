@@ -32,7 +32,24 @@ submit.addEventListener('click', (event) => {
   })
     .then(res => res.json())
     .then((data) => {
-      console.log(data);
+      const messageContainer = document.getElementById('message-container');
+      messageContainer.innerHTML = `<p id="message" class="blue">${data.message}</p>`;
+
+      if (data.status === 'fail') {
+        const message = document.getElementById('message');
+        message.classList.remove('blue');
+        message.classList.add('red');
+        origin.value = '';
+        destination.value = '';
+        time.value = '';
+        allowStops.value = '';
+        avaliableSpace.value = '';
+        description.value = '';
+
+        if (data.message === 'This token is either wrong or has expired') {
+          window.location.replace('index.html');
+        }
+      }
     })
     .catch(err => console.log(err));
 });

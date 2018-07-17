@@ -66,7 +66,7 @@ header {
   text-align: center;
 }
 
-button {
+button, .button {
   border: 0;
   background: #4e6eff;
   min-height: 30px;

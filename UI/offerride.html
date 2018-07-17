@@ -5,71 +5,56 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <title>Ride My Way | Offer Ride </title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="./styles/style.css">
+      <link rel="stylesheet" href="./styles/index.css">
+      <link rel="stylesheet" href="./styles/rideoffer-style.css">
       <link rel="stylesheet" href="./styles/offerride-style.css">
   </head>
   <body class="container diff-bg">
     <header>
-        <div id="dashboard-header" class="container">
-            <img id="logo2" src="./images/logo.png">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="AboutUs.html">About Us</a></li>
-                    <li><a href="ContactUs.html">Contact Us</a></li>
-                </ul>
-            </nav>
+        <div class="wrap-container full-width">
+          <img class="logo" src="./images/logo.png">
+          <div class="brand wrap-container dashboard-brand">
+            <a class="links dashboard-links" href="#">Home</a></li>
+          </div>
         </div>
     </header>
-    <div class="offer-body">
-      <div class="userfeatures">
-        <ul>
-            <li><a href="rideoffers.html">Rides</a></li>
-            <li><a class="current" href="offerride.html">Offer</a></li>
-            <li><a href="reviewrequests.html">Requests</a></li>
-            <li><a id="sign-out" href="">Sign Out</a></li>
-        </ul>
-      </div>
-      <div class="offer-container">
-        <h1>Offer a Ride</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor sagittis iaculis. Nulla sit amet sodales nisi. Vestibulum non est dui.</p>
+    <nav class="wrap-container full-width dashboard-nav">
+      <a class="links nav-buttons" href="rideoffers.html">Rides</a>
+      <a class="current links nav-buttons" href="offerride.html">Offer</a>
+      <a class="links nav-buttons" href="reviewrequests.html">Requests</a>
+      <a class="links nav-buttons" id="sign-out" href="">Sign Out</a>
+    </nav>
+    <div class="wrap-container full-width center-contents">
+      <h2>Offer a Ride</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor sagittis iaculis. Nulla sit amet sodales nisi. Vestibulum non est dui.</p>
+      <form class="wrap-container">
         <div>
-          <form>
-            <div>
-              <label>Origin</label><br>
-              <input id="origin" type="text" required>
-            </div>
-            <div>
-              <label>Destination</label><br>
-              <input id="destination" type="text" required>
-            </div>
-            <div>
-              <label>Time</label><br>
-              <input id="time" type="time" required>
-              <label>Allow Stop?</label><br>
-              <select id="stops">
-                <option>true</option>
-                <option>false</option>
-              </select>
-              <label>Space</label><br>
-              <input id="space" type="number" required>
-            </div>
-            <div>
-              <label>Proposed Route</label><br>
-              <textarea id="description" spellcheck="true" placeholder="Describe the route you will be taking."></textarea>
-            </div>
-            <br>
-            <input class="button" type="submit" value="Offer">
-          </form>
+          <label>Origin</label><br>
+          <input id="origin" class="offer-fields" type="text" required>
         </div>
-      </div>
+        <div>
+          <label>Destination</label><br>
+          <input id="destination" class="offer-fields" type="text" required>
+        </div>
+        <div>
+          <label>Time</label><br>
+          <input id="time" class="offer-fields" type="time" required>
+          <label>Allow Stop?</label><br>
+          <select id="stops" class="offer-fields">
+            <option>true</option>
+            <option>false</option>
+          </select>
+          <label>Space</label><br>
+          <input id="space" class="offer-fields" type="number" required>
+        </div>
+        <div>
+          <label>Proposed Route</label><br>
+          <textarea id="description" spellcheck="true" placeholder="Describe the route you will be taking."></textarea>
+        </div>
+        <div id="message-container"></div>
+        <input class="button offer-button" type="submit" value="Offer">
+      </form>
     </div>
-
-    <footer class="offerride-footer">
-      <div>
-        <p>Ride My Way &copy; 2018</p>
-      </div>
-    </footer>
     <script src="./scripts/offerride.js" type=""></script>
   </body>
 </html>
