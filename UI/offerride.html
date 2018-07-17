@@ -28,27 +28,31 @@
       <h2>Offer a Ride</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas auctor sagittis iaculis. Nulla sit amet sodales nisi. Vestibulum non est dui.</p>
       <form class="wrap-container">
-        <div>
-          <label>Origin</label><br>
+        <div class="value">
+          <label>Origin</label>
           <input id="origin" class="offer-fields" type="text" required>
         </div>
-        <div>
-          <label>Destination</label><br>
+        <div class="value">
+          <label>Destination</label>
           <input id="destination" class="offer-fields" type="text" required>
         </div>
-        <div>
-          <label>Time</label><br>
+        <div class="value">
+          <label>Time</label>
           <input id="time" class="offer-fields" type="time" required>
-          <label>Allow Stop?</label><br>
+        </div>
+        <div class="value">
+          <label>Allow Stop?</label>
           <select id="stops" class="offer-fields">
             <option>true</option>
             <option>false</option>
           </select>
-          <label>Space</label><br>
+        </div>
+        <div class="value">
+          <label>Space</label>
           <input id="space" class="offer-fields" type="number" required>
         </div>
-        <div>
-          <label>Proposed Route</label><br>
+        <div class="value">
+          <label class="textarea-label">Proposed Route</label>
           <textarea id="description" spellcheck="true" placeholder="Describe the route you will be taking."></textarea>
         </div>
         <div id="message-container"></div>
