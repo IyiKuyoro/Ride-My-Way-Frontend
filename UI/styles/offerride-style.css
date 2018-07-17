@@ -25,6 +25,7 @@
 
 form label {
   width: 100%;
+  display: block;
 }
 
 .offer-button {
@@ -57,6 +58,18 @@ form {
 
 .red {
   color: red;
+}
+
+.value {
+  margin-top: 2%;
+}
+
+.textarea-label {
+  margin-bottom: 2%;
+}
+
+.value:first-of-type {
+  margin-top: 0;
 }
 
 textarea {
