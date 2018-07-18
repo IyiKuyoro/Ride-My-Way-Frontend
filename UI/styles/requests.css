@@ -13,11 +13,11 @@
   cursor: pointer;
 }
 
-#accept {
+.accept {
   background: #3fccff;
 }
 
-#decline {
+.decline {
   background: #3fccff;
 }
 
