@@ -81,7 +81,7 @@ signUp.addEventListener('submit', (event) => {
         .then(res => res.json())
         .then((data) => {
           signUpError.innerHTML = data.message || '';
-          if (data.status === 'success') {
+          if (data.status === 'Success') {
             window.location.replace('index.html');
           }
         })
