@@ -5,88 +5,64 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Ride My Way | Sign Up</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./styles/style.css">
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/signup.css">
     </head>
     <body>
-        <header>
-            <div id="nonhomeheader" class="container">
-                <img id="logo2" src="./images/logo.png">
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="AboutUs.html">About Us</a></li>
-                        <li><a href="ContactUs.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <section>
-            <div id="signup-form">
-                <h2>User Sign-Up</h2>
-                <form class="sign-up">
-                    <div>
-                        <label>First Name</label>
-                        <br>
-                        <input id="first-name" type="text" placeholder="James" required>
-                    </div>
-                    <div>
-                        <label>Last Name</label>
-                        <br>
-                        <input id="last-name" type="text" placeholder="Bond" required>
-                    </div>
-                    <div>
-                        <label>Sex</label><br>
-                        <select id="sex" required>
-                            <option>Male</option>
-                            <option>Female</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label>Date of Birth</label>
-                        <br>
-                        <input id="DOB" type="date" required>
-                    </div>
-                    <div>
-                        <label>Phone Number</label>
-                        <br>
-                        <input id="phone-number" type="number" required>
-                    </div>
-                    <div>
-                        <label>Email Address</label>
-                        <br>
-                        <input id="email" type="email" placeholder="example@ridemyway.com" required>
-                    </div>
-                    <div>
-                        <label>Password</label>
-                        <br>
-                        <input id="password" type="password" placeholder="XXXXXXX" required>
-                    </div>
-                    <div>
-                        <label>Confirm Password</label>
-                        <br>
-                        <input id="password-confirm" type="password" placeholder="XXXXXXXX" required>
-                    </div>
-                    <div>
-                        <p id="signupErrMsg"></p>
-                    </div>
-                    <div id="signup-message"> 
-                      <p id="signup-message-p"></p>
-                    </div>
-                    <button id="sign-up-btn" class="button" type="submit">Submit</button>
-                </form>
-                <p id="signup-form-p">Already a user?  <a href="index.html">sign-in</a></p>
-            </div>
-        </section>
-        <footer class="norm-foot signup-foot">
-            <div>
-                <p>Ride My Way &copy; 2018</p>
-                
-                <div class="images">
-                    <a href="#"><img src="./images/icon_facebook.png"></a>
-                    <a href="#"><img src="./images/icon_twitter.png"></a>
-                </div>
-            </div>
-        </footer>
-        <script src="./scripts/signup.js" type=""></script>
+      <header>
+        <div class="wrap-container full-width">
+          <img class="logo" src="./images/logo.png">
+          <div class="brand">
+            <h3>Ride My Way</h3>
+            <h5>Simply tag along</h5>
+          </div>
+        </div>
+      </header>
+      <div id="signup-form" class="wrap-container full-width">
+        <h2>User Sign-Up</h2>
+        <form class="wrap-container sign-up">
+          <div class="values">
+            <label>First Name</label>
+            <input class="offer-fields" id="first-name" type="text" placeholder="James" required>
+          </div>
+          <div class="values">
+            <label>Last Name</label>
+            <input class="offer-fields" id="last-name" type="text" placeholder="Bond" required>
+          </div>
+          <div class="values">
+            <label>Sex</label>
+            <select id="sex" required>
+              <option>Male</option>
+              <option>Female</option>
+            </select>
+          </div>
+          <div class="values">
+            <label>Date of Birth</label>
+            <input class="offer-fields" id="DOB" type="date" required>
+          </div>
+          <div class="values">
+            <label>Phone Number</label>
+            <input class="offer-fields" id="phone-number" type="number" required>
+          </div>
+          <div class="values">
+            <label>Email Address</label>
+            <input class="offer-fields" id="email" type="email" placeholder="example@ridemyway.com" required>
+          </div>
+          <div class="values">
+            <label>Password</label>
+            <input class="offer-fields" id="password" type="password" placeholder="XXXXXXX" required>
+          </div>
+          <div class="values">
+            <label>Confirm Password</label>
+            <input class="offer-fields" id="password-confirm" type="password" placeholder="XXXXXXXX" required>
+          </div>
+          <div id="signup-message" class="values"> 
+            <p id="signup-message-p"></p>
+          </div>
+          <button id="sign-up-btn" class="button offer-button" type="submit">Submit</button>
+          <a id="signup-form-p" class="links" href="index.html">Already a user? sign-in</a>
+        </form>
+      </div>
+      <script src="./scripts/signup.js" type=""></script>
     </body>
 </html>
