@@ -5,47 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Ride My Way | Offer Ride </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/loader-style.css">
+    <link rel="stylesheet" href="./styles/rideoffer-style.css">
     <link rel="stylesheet" href="./styles/requests.css">
   </head>
   <body class="container diff-bg">
-    <header>
-      <div id="dashboard-header" class="container">
-        <img id="logo2" src="./images/logo.png">
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="AboutUs.html">About Us</a></li>
-            <li><a href="ContactUs.html">Contact Us</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      <header>
+        <div class="wrap-container full-width">
+          <img class="logo" src="./images/logo.png">
+          <div class="brand wrap-container dashboard-brand">
+            <a class="links dashboard-links" href="#">Home</a></li>
+          </div>
+        </div>
+      </header>
+    <nav class="wrap-container full-width dashboard-nav">
+      <a class="links nav-buttons" href="rideoffers.html">Rides</a>
+      <a class="links nav-buttons" href="offerride.html">Offer</a>
+      <a class="current links nav-buttons" href="reviewrequests.html">Requests</a>
+      <a class="links nav-buttons" id="sign-out" href="">Sign Out</a>
+    </nav>
     <div class="cover">
       <div class="loader"></div>
     </div>
-    <div class="userfeatures">
-      <ul>
-        <li><a href="rideoffers.html">Rides</a></li>
-        <li><a href="offerride.html">Offer</a></li>
-        <li><a class="current" href="reviewrequests.html">Requests</a></li>
-        <li><a id="sign-out" href="">Sign Out</a></li>
-      </ul>
-    </div>
-    <div id="rides"></div>
+    <div id="rides" class="wrap-container full-width"></div>
     <div class="screen visibility">
     </div>
-    <footer class="dash-foot spe-ft">
-      <div>
-        <p>Ride My Way &copy; 2018</p>
-        
-        <div class="images">
-          <a href="#"><img src="./images/icon_facebook.png"></a>
-          <a href="#"><img src="./images/icon_twitter.png"></a>
-        </div>
-      </div>
-    </footer>
     <script src="./scripts/requests.js" type=""></script>
   </body>
 </html>
