@@ -1,0 +1,38 @@
+.values label {
+  width: 100%;
+  display: inline-block;
+}
+
+.values input {
+  width: 95%;
+  display: inline-block;
+  text-align: center;
+}
+
+.offer-fields {
+  width: 95%;
+  margin: 5px 0;
+  border: none;
+  text-align: center;
+  height: 25px;
+}
+
+.offer-button {
+  margin-top: 10px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+select {
+  width: 95%;
+  height: 25px;
+  border: none;
+}
+
+.links {
+  margin: 10px 0 0 0;
+}
+
+#signup-message {
+  color: red;
+}

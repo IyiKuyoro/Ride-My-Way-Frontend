@@ -116,6 +116,21 @@ button, .button {
   display: none;
 }
 
+#signup-form {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.sign-up {
+  width: 50%;
+  min-width: 250px;
+  margin: 10px auto 0 auto;
+  font-size: 18px;
+  flex-direction: column;
+  background: #ccc;
+}
+
 @media screen and (max-width: 380px) {
   .wrap-container {
     justify-content: center;

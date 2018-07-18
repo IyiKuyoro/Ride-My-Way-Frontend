@@ -80,8 +80,10 @@ signUp.addEventListener('submit', (event) => {
       })
         .then(res => res.json())
         .then((data) => {
-          signUpError.innerHTML = data.message || 'Success!';
-          window.location.replace('index.html');
+          signUpError.innerHTML = data.message || '';
+          if (data.status === 'success') {
+            window.location.replace('index.html');
+          }
         })
         .catch(err => console.log(err));
     }
