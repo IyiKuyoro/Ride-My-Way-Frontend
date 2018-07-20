@@ -43,7 +43,7 @@
   min-width: 180px;
 }
 
-#rides {
+#rides , .page-buttons-container {
   justify-content: center;
 }
 
@@ -168,6 +168,16 @@
   background: #3fccff;
   position: absolute;
   top: 120px;
+}
+
+.page-buttons {
+  width: 100px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.page-buttons:last-of-type {
+  margin-right: 0;
 }
 
 @media screen and (max-width: 380px) {
